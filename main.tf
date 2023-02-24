@@ -64,7 +64,7 @@ resource "vsphere_virtual_machine" "vm" {
 
   disk {
     label            = "${var.name}-disk"
-    thin_provisioned = data.vsphere_virtual_machine.template.disks.0.thin_provisioned
+    #thin_provisioned = data.vsphere_virtual_machine.template.disks.0.thin_provisioned
     #eagerly_scrub    = data.vsphere_virtual_machine.template.disks.0.eagerly_scrub
     size             = var.disksize == "" ? data.vsphere_virtual_machine.template.disks.0.size : var.disksize 
   }
