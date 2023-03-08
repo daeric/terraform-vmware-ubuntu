@@ -56,7 +56,7 @@ variable "name" {
 variable "vm-datastore" {
   type        = string
   description = "Datastore used for the vSphere virtual machines"
-  default     = "Synology"
+  default     = "Synology (1)"
 }
 
 variable "vm-network" {
